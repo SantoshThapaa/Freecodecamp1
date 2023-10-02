@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take a moment and fill out carefully.</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+        <br>
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+        <br>
+        <label id="number-label" for="number">Number:</label>
+        <input id="number" type="number" placeholder="Enter a number" min="1" max="100" step="1" required>
+        <br>
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+        <br>
+        <label>Select an option:</label>
+        <input type="radio" id="radio1" name="radio-group" value="radio1" required>
+        <label for="radio1">Radio 1</label>
+        <input type="radio" id="radio2" name="radio-group" value="radio2" required>
+        <label for="radio2">Radio 2</label>
+        <br>
+        <label>Select multiple options:</label>
+        <br>
+        <input type="checkbox" id="checkbox1" name="checkbox-group" value="checkbox1">
+        <label for="checkbox1">Checkbox 1</label>
+        
+        <input type="checkbox" id="checkbox2" name="checkbox-group" value="checkbox2">
+        <label for="checkbox2">Checkbox 2</label>
+        <br>
+        <label for="comments">Additional comments:</label>
+        <br>
+        <textarea id="comments" placeholder="Enter your comments"></textarea>
+        <br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
